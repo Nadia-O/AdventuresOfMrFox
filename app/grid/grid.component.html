@@ -1,0 +1,94 @@
+<!-- <h1>Adventures of Mr. Fox</h1>
+
+<div id='container'>
+    <div [innerHTML]="stuff" id='world'></div>
+    <div id='MrFox'></div>
+    <div id="Cat"></div>
+    <div [innerHTML]='MrFox.health' id='health'></div>
+    <br>
+<div class = "buttons">
+    <button (click)="moveMrFox('up')">UP</button><br>
+    <button (click)="moveMrFox('left')">LEFT</button>
+    <button (click)="moveMrFox('right')">RIGHT</button><br>
+    <button (click)="moveMrFox('down')">DOWN</button>
+</div>
+
+</div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id='world'> </div>
+        <div id='MrFox'></div>
+        <div id='cat'></div>
+        <div id='health' innerHTML='this.health'>Health:</div> 
+        <div id='shibaSneeze'>
+            <button (click)='shibaSneeze()'>Shiba Sneeze</button>
+        </div>
+        <div id='shibaBark'>
+                <button (click)='shibaBark()'>Shiba Bark</button>
+            </div>
+    </div> 
+    <div class="popup">
+            <button *ngIf='story1' (click)="closeStory()">X</button>
+            <app-story1 *ngIf='story1'></app-story1>
+    </div>
+    <div class="popup">
+            <button *ngIf='story2' (click)="closeStory()">X</button>
+            <app-story2 *ngIf='story2'></app-story2>
+    </div>
+    <div class="popup">
+            <button *ngIf='story3' (click)="closeStory()">X</button>
+            <app-story3 *ngIf='story3'></app-story3>
+    </div>
+    <div class="popup">
+            <button *ngIf='story4' (click)="closeStory()">X</button>
+            <app-story4 *ngIf='story4'></app-story4>
+    </div>
+    <div class="popup">
+            <button *ngIf='story5' (click)="closeStory()">X</button>
+            <app-story5 *ngIf='story5'></app-story5>
+    </div>
+    <div class="popup">
+        <button *ngIf='story6' (click)="closeStory()">X</button>
+        <app-story6 *ngIf='story6'></app-story6>
+    </div>
+    <div class="popup">
+            <button *ngIf='story7' (click)="closeStory()">X</button>
+            <app-story7 *ngIf='story7'></app-story7>
+    </div>
+    <div class="popup">
+            <button *ngIf='story8' (click)="closeStory()">X</button>
+            <app-story8 *ngIf='story8'></app-story8>
+    </div>
+    <div class="popup">
+            <button *ngIf='story9' (click)="closeStory()">X</button>
+            <app-story9 *ngIf='story9'></app-story9>
+    </div>
+    <div class="popup">
+            <button *ngIf='story10' (click)="closeStory()">X</button>
+            <app-story10 *ngIf='story10'></app-story10>
+    </div>
+    <div class="popup">
+            <button *ngIf='story11' (click)="closeStory()">X</button>
+            <app-story11 *ngIf='story11'></app-story11>
+    </div>
+    <div class="popup">
+            <button *ngIf='story12' (click)="ngOnInit()">X</button>
+            <app-story12 *ngIf='story12'></app-story12>
+    </div>
+    <div class="popup">
+            <button *ngIf='story13' (click)="ngOnInit()">X</button>
+            <app-story13 *ngIf='story13'></app-story13>
+    </div>
+    <div class="popup">
+            <button *ngIf='game' (click)="closeStory()">X</button>
+            <app-game *ngIf='game'></app-game>
+    </div>
+</body>
